@@ -31,8 +31,8 @@ if args.len() != 3 {
     let original = read_file(input_path);
 
     // Replace String::from("dummy text") with what you get from read_file
-    let s = String::from(original);
-
+    let s = original;
+    
     let s_disemvowel = disemvowel(&s);
 
     // Use command-line arguments for the name of the file,
